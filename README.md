@@ -1,3 +1,3 @@
-# algorithms-and-data-structures
+# Racket Algorithms and Data Structures
 
-README text here.
+Algorithms and data structures implemented in Racket.
