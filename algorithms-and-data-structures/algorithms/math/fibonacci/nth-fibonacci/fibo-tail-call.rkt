@@ -1,5 +1,6 @@
-#lang racket/base
+#lang typed/racket
 
+(: fibo (-> Integer Integer))
 (define (fibo n)
   (let loop ((now 0) (nxt 1) (idx 0))
     (if (= n idx)

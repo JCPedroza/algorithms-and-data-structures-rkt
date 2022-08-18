@@ -1,5 +1,6 @@
-#lang racket/base
+#lang typed/racket
 
+(: fibo (-> Integer Integer))
 (define (fibo n)
   (if (< n 2)
       n
