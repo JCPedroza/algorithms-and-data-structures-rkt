@@ -1,9 +1,10 @@
 #lang racket/base
 
-(require rackunit)
+(require rackunit "fibo-simple.rkt")
 
-(requrie 
-  (only-in 
-    ["fibo-simple.rkt" fibo-simple]))
+#|
+(requrie
+  (rename-in "fibo-simple.rkt" (fibo fibo-simple)))
+|#
 
-(check-equal? (fibo-simple 0) 0 "test")
+(check-equal? (fibo 0) 0 "test")
