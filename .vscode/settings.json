@@ -17,4 +17,7 @@
         "**/Thumbs.db": true,
     },
     "files.trimTrailingWhitespace": true,
+    "[racket]": {
+      "editor.rulers": [80],
+  }
 }
