@@ -13,19 +13,11 @@
 ;; To view documentation:
 ;;   $ raco docs <<name>>
 ;;
-;; For your convenience, we have included LICENSE-MIT and LICENSE-APACHE files.
-;; If you would prefer to use a different license, replace those files with the
-;; desired license.
-;;
 ;; Some users like to add a `private/` directory, place auxiliary files there,
 ;; and require them in `main.rkt`.
 ;;
 ;; See the current version of the racket style guide here:
 ;; http://docs.racket-lang.org/style/index.html
-
-;; Code here
-
-
 
 (module+ test
   ;; Any code in this `test` submodule runs when this file is run using DrRacket
