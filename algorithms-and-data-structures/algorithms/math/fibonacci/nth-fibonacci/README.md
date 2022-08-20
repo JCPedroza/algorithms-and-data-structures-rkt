@@ -16,4 +16,3 @@ The function signature is
 (: fibo (-> Integer Ingeter))
 (define (fibo n) ... )
 ```
-
