@@ -1,5 +1,7 @@
 #lang typed/racket
 
+(provide fibo)
+
 ; Calculate the nth Fibonacci number using a for loop and three variables.
 (: fibo (-> Integer Integer))
 (define (fibo n)
