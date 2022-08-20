@@ -1,11 +1,12 @@
-#lang racket/base
+#lang typed/racket
 
 (require math/matrix)
 
 (provide fibo)
 
 ; Compute the nth Fibonacci number using matrix form.
-(define (fibo n)
+; (: fibo (-> Integer Integer))
+(define (fibo (n : Integer))
   (matrix-ref
     (matrix-expt
       (matrix
