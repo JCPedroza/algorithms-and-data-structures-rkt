@@ -8,12 +8,8 @@
       (hash-has-key? ht n)
       (hash-ref ht n)
       (begin
-        (hash-set!
-          ht
-          n
-          (if
-            (< n 2)
-            n
+        (hash-set! ht n
+          (if (< n 2) n
             (+ (fibo (sub1 n)) (fibo (- n 2)))))
         (hash-ref ht n)))))
 
