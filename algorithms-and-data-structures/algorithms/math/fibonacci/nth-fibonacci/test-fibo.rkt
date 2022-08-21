@@ -5,13 +5,15 @@
   (prefix-in for: "fibo-for.rkt")
   (prefix-in matrix: "fibo-matrix.rkt")
   (prefix-in simple: "fibo-simple.rkt")
-  (prefix-in tail-call: "fibo-tail-call.rkt"))
+  (prefix-in tail-call: "fibo-tail-call.rkt")
+  (prefix-in memo-hash: "fibo-memo-hash.rkt"))
 
 (define test-subjects (list
   for:fibo
   matrix:fibo
   simple:fibo
-  tail-call:fibo))
+  tail-call:fibo
+  memo-hash:fibo))
 
 (for ([fibo test-subjects])
   (check-equal? (fibo 0) 0)
