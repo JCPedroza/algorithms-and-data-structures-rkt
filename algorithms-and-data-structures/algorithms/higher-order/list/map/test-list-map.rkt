@@ -11,19 +11,18 @@
   simple-cond:map
   simple-if:map
   tail-cond:map
-  tail-if:map
-))
+  tail-if:map))
 
 (for ([map test-subjects])
   (test-equal?
-    "Double integers"
+    "Double integers with lambda"
     (map
       (lambda (x) (* x 2))
       '(1 2 3 4))
     '(2 4 6 8))
 
   (test-equal?
-    "Is integer even?"
+    "Is integer even? with built-in"
     (map
       even?
       '(1 2 3 4))
