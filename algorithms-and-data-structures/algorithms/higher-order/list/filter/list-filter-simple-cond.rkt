@@ -1,14 +1,14 @@
-#lang racket/base
+#lang racket
 
 (provide filter)
 
 (define (filter f xs)
   (cond
     [(null? xs) null]
-    [(f (car xs)) (cons
-      (car xs)
-      (filter f (cdr xs)))]
-    [#t (filter f (cdr xs))]))
+    [(f (first xs)) (cons
+      (first xs)
+      (filter f (rest xs)))]
+    [#t (filter f (rest xs))]))
 
 (define nums '(1 2 3 4 5 6))
 
