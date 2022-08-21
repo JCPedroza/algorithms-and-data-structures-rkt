@@ -1,14 +1,10 @@
-#lang racket/base
+#lang racket
 
-(define (filter f xs)
+(define (list-filter f xs)
   (let loop ((ys xs) (filters null))
     (cond
       [(null? ys) filters]
-      [(f (car ys)) (loop (cdr ys) (cons (car ys) filters))]
-      [#t (loop f (cdr ys))])))
+      [(f (first ys)) (loop (rest ys) (cons (first ys) filters))]
+      [#t (loop f (rest ys))])))
 
-(define nums '(1 2 3 4 5 6))
-
-(define even-nums (filter even? nums))
-
-even-nums
+(provide list-filter)
