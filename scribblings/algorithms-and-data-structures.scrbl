@@ -3,8 +3,8 @@
                     racket/base]]
 
 @title{algorithms-and-data-structures}
-@author{piubu}
+@author{JCPedroza}
 
 @defmodule[algorithms-and-data-structures]
 
-Package Description Here
+Algorithms and data structures implemented in Racket
