@@ -5,9 +5,7 @@
 ; (: list-map (-> (Listoof Any) (Listof Any)))
 (define (list-map f xs)
   (reverse (let loop ((ys xs) (maps null))
-    (if
-      (null? ys)
-      maps
+    (if (null? ys) maps
       (loop (rest ys) (cons (f (first ys)) maps))))))
 
 (provide list-map)
