@@ -17,11 +17,11 @@ Other names
 
 ## Write the List Map Algorithm
 
-Write a function, `map`, that takes a `function` and a `list` as arguments,
+Write a function, `list-map`, that takes a `function` and a `list` as arguments,
 and returns the list of the results of applying the `function` to each element
 of the `list`.
 
-- Function name: `map`
+- Function name: `list-map`
 - Two function arguments: `function`, `list`
 
 ## Function Signature

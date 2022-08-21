@@ -8,22 +8,22 @@
   (prefix-in tail-if: "list-map-tail-if.rkt"))
 
 (define test-subjects (list
-  simple-cond:map
-  simple-if:map
-  tail-cond:map
-  tail-if:map))
+  simple-cond:list-map
+  simple-if:list-map
+  tail-cond:list-map
+  tail-if:list-map))
 
-(for ([map test-subjects])
+(for ([list-map test-subjects])
   (test-equal?
     "Double integers with lambda"
-    (map
+    (list-map
       (lambda (x) (* x 2))
       '(1 2 3 4))
     '(2 4 6 8))
 
   (test-equal?
     "Is integer even? with built-in"
-    (map
+    (list-map
       even?
       '(1 2 3 4))
     '(#f #t #f #t)))
