@@ -16,6 +16,15 @@
 
 (for ([map test-subjects])
   (test-equal?
-    (symbol->string (object-name map))
-    (map (lambda (x) (* x 2)) '(0 1 2 3))
-    '(0 2 4 6)))
+    "Double integers"
+    (map
+      (lambda (x) (* x 2))
+      '(1 2 3 4))
+    '(2 4 6 8))
+
+  (test-equal?
+    "Is integer even?"
+    (map
+      even?
+      '(1 2 3 4))
+    '(#f #t #f #t)))
