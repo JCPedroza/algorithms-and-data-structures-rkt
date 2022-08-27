@@ -10,16 +10,13 @@ Algorithms and data structures implemented in Racket.
 
 ### Unit Testing
 
-You can use these commands to run all unit tests, without runing other
-racket files.
-
-For bash, zsh, ksh93
+Linux with bash, zsh, or ksh93
 ```bash
 # bash might need shopt -s globstar first
 raco test **/*.test.rkt
 ```
 
-Any unix-y system
+Any unixy system, including mac
 
 ```bash
 find . -name "*.test.rkt" -exec raco test \{\} +
