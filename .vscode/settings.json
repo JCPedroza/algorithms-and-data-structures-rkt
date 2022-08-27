@@ -1,23 +1,23 @@
 {
-    "editor.bracketPairColorization.enabled": true,
-    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-    "editor.detectIndentation": false,
-    "editor.insertSpaces": true,
-    "editor.rulers": [
-      80
-    ],
-    "editor.tabSize": 2,
-    "editor.trimAutoWhitespace": true,
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        "**/Thumbs.db": true,
-    },
-    "files.trimTrailingWhitespace": true,
-    "[racket]": {
-      "editor.rulers": [80],
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "editor.rulers": [
+    80
+  ],
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true,
+  },
+  "files.trimTrailingWhitespace": true,
+  "[racket]": {
+    "editor.rulers": [80],
   }
 }
