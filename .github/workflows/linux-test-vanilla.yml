@@ -21,4 +21,4 @@ jobs:
       - name: Compiling algorithms-and-data-structures and building its docs
         run: raco setup --check-pkg-deps --unused-pkg-deps algorithms-and-data-structures
       - name: Testing algorithms-and-data-structures
-        run: shopt -s globstar && raco test **/*.test.rkt
+        run: raco test .
