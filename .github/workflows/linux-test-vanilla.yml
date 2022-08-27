@@ -1,5 +1,5 @@
 on: [push, pull_request]
-name: linux build & tests
+name: vanilla test with raco test this
 jobs:
   build:
     name: "Build on Racket '${{ matrix.racket-version }}' (${{ matrix.racket-variant }})"

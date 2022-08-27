@@ -1,5 +1,5 @@
 on: [push, pull_request]
-name: linux build & tests
+name: unixy command test
 jobs:
   build:
     name: "Build on Racket '${{ matrix.racket-version }}' (${{ matrix.racket-variant }})"
