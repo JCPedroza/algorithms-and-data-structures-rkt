@@ -2,7 +2,6 @@
 
 ; Applies a function to each element of a list, returning the results in a list,
 ; using simple recursion and a cond expression.
-; (: list-map (-> (Listoof Any) (Listof Any)))
 (define (list-map f xs)
   (cond
     [(null? xs) null]
