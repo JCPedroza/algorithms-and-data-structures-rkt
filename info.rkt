@@ -4,13 +4,13 @@
 (define deps '(
   "base"
   "rackunit-lib"
-   "typed-racket-lib"
-    "math-lib"))
+  "typed-racket-lib"
+  "math-lib"))
 
 (define build-deps '(
   "scribble-lib"
   "racket-doc"
-   "rackunit-lib"))
+  "rackunit-lib"))
 
 (define scribblings '(("scribblings/algorithms-and-data-structures.scrbl" ())))
 (define pkg-desc "Algorithms and data structures implemented in Racket")
