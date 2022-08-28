@@ -14,6 +14,7 @@ Linux with bash, zsh, or ksh93
 ```bash
 # bash might need shopt -s globstar first
 raco test **/*.test.rkt
+raco test -j 4 **/*.test.rkt # Enable up to 4 concurrent threads
 ```
 
 Any unixy system, including mac
