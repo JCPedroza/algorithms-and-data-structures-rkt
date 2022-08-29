@@ -11,4 +11,5 @@
   (check-equal? (sol 3) 0)
   (check-equal? (sol 5) 3)
   (check-equal? (sol 6) 8)
-  (check-equal? (sol 10) 23))
+  (check-equal? (sol 10) 23)
+  (check-equal? (sol 30) 195))
