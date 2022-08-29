@@ -1,0 +1,12 @@
+# File ignore for line count shield
+
+# Ignore these directories
+.git/
+.github/
+.vscode/
+docs/
+
+# Ignore these files
+.gitignore
+*.md
+*.json

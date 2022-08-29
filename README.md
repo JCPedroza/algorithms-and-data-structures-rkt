@@ -23,6 +23,19 @@ Any unixy system, including mac
 find . -name "*.test.rkt" -exec raco test \{\} +
 ```
 
+---
+
+[![total lines][90]][91]
+[![code size][92]][93]
+[![repo size][94]][95]
+
+[90]: https://img.shields.io/tokei/lines/github/jcpedroza/algorithms-and-data-structures-rkt
+[91]: https://img.shields.io/tokei/lines/github/jcpedroza/algorithms-and-data-structures-rkt
+[92]: https://img.shields.io/github/languages/code-size/jcpedroza/algorithms-and-data-structures-rkt
+[93]: https://img.shields.io/github/languages/code-size/jcpedroza/algorithms-and-data-structures-rkt
+[94]: https://img.shields.io/github/repo-size/jcpedroza/algorithms-and-data-structures-rkt
+[95]: https://img.shields.io/github/repo-size/jcpedroza/algorithms-and-data-structures-rkt
+
 [0]: https://badgen.net/github/license/JCPedroza/algorithms-and-data-structures-ts
 [1]: https://en.wikipedia.org/wiki/MIT_License
 [2]: https://img.shields.io/badge/-Made%20with%20Racket-darkred?logo=racket
