@@ -1,16 +1,18 @@
 #lang typed/racket
 
-; Sum of multiples of 3 or 5 below the limit
+; Compute sum of multiples of 3 or 5 that are less than the specified limit,
+; using brute force trial division and simple recursion.
 (: muls-of-3-or-5 (-> Integer Integer))
 (define (muls-of-3-or-5 limit)
-  (let ([num (sub1 limit)])
+  (let ([sublim (sub1 limit)])
     (cond
-      [(< num 3) 0]
+      [ (< sublim 3) 0 ]
 
-      [(or (zero? (modulo num 3))
-           (zero? (modulo num 5)))
-      (+ num (muls-of-3-or-5 num))]
+      [ (or
+          (zero? (modulo sublim 3))
+          (zero? (modulo sublim 5)))
+        (+ sublim (muls-of-3-or-5 sublim))]
 
-      [#t (muls-of-3-or-5 num)])))
+      [ #t (muls-of-3-or-5 sublim) ])))
 
 (provide muls-of-3-or-5)
