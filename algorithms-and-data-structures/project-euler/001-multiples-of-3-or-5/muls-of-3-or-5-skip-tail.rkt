@@ -5,7 +5,7 @@
 (: add5 (-> Integer Integer))
 (define (add5 int) (if (> int 0) (+ int 5) 0))
 
-; Compute sum of multiples of 3 or 5 that are less than the specified limit,
+; Compute sum of multiples of 3 or 5 that are less than [limit]
 ; using skipped sequences and tail call recursion.
 (: muls-of-3-or-5 (-> Integer Integer))
 (define (muls-of-3-or-5 limit)

@@ -1,6 +1,6 @@
 #lang typed/racket
 
-; Compute sum of multiples of 3 or 5 that are less than the specified limit,
+; Compute sum of multiples of 3 or 5 that are less than [limit],
 ; using brute force trial division in a for loop.
 (: muls-of-3-or-5 (-> Integer Integer))
 (define (muls-of-3-or-5 limit)
