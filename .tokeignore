@@ -5,6 +5,7 @@
 .github/
 .vscode/
 docs/
+scribblings/
 
 # Ignore these files
 .gitignore
