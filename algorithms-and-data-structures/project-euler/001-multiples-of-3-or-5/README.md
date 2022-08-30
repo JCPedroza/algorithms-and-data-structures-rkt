@@ -17,15 +17,15 @@ returns the sum of all the multiples of 3 or 5 that are less than the given
 
 ## Examples
 
-```
-muls-of-3-or-5(-1) returns 0
-muls-of-3-or-5(0) returns 0
-muls-of-3-or-5(1) returns 0
-muls-of-3-or-5(3) returns 0
-muls-of-3-or-5(5) returns 3
-muls-of-3-or-5(6) returns 8
-muls-of-3-or-5(10) returns 23
-muls-of-3-or-5(30) returns 195
+```text
+(muls-of-3-or-5 -1) evaluates to 0
+(muls-of-3-or-5 0) evaluates to 0
+(muls-of-3-or-5 1) evaluates to 0
+(muls-of-3-or-5 3) evaluates to 0
+(muls-of-3-or-5 5) evaluates to 3
+(muls-of-3-or-5 6) evaluates to 8
+(muls-of-3-or-5 10) evaluates to 23
+(muls-of-3-or-5 30) evaluates to 195
 ```
 
 ## Resources
