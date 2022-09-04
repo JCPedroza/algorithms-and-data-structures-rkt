@@ -1,6 +1,11 @@
 {
   "editor.bracketPairColorization.enabled": true,
-  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": false,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": "active",
+  "editor.guides.highlightActiveBracketPair": true,
+  "editor.matchBrackets": "always",
+
   "editor.detectIndentation": false,
   "editor.insertSpaces": true,
   "editor.rulers": [
@@ -8,6 +13,7 @@
   ],
   "editor.tabSize": 2,
   "editor.trimAutoWhitespace": true,
+
   "files.exclude": {
       "**/.git": true,
       "**/.svn": true,
