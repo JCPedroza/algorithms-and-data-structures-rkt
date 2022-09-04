@@ -2,6 +2,8 @@
 
 ; Compute sum of two numbers, where the numbers' digits are represented as
 ; non-negative integers in a list.
+; Uses a functional approach with simple recursion.
+; Complexity: time O(n), space O(n).
 (: add-listnums (-> (Listof Integer) (Listof Integer) (Listof Integer)))
 (define (add-listnums listnum-a listnum-b)
   (let loop ((list-a listnum-a) (list-b listnum-b) (carry 0))
