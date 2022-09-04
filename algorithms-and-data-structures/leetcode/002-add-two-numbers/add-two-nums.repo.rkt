@@ -1,9 +1,11 @@
 #lang typed/racket
 
 (require
-  (prefix-in simple: "add-two-nums-simple.rkt"))
+  (prefix-in add-two-simple: "add-two-nums-simple.rkt")
+  (prefix-in add-two-do: "add-two-nums-do.rkt"))
 
 (define solutions (list
-  simple:add-listnums))
+  add-two-simple:add-listnums
+  add-two-do:add-listnums ))
 
 (provide solutions)
