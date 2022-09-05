@@ -6,7 +6,7 @@
 ; Complexity: time O(n), space O(n).
 (: add-listnums (-> (Listof Integer) (Listof Integer) (Listof Integer)))
 (define (add-listnums listnum-a listnum-b)
-  (let loop ((list-a listnum-a) (list-b listnum-b) (carry 0))
+  (let loop ((carry 0) (list-a listnum-a) (list-b listnum-b))
     (if (and (empty? list-a) (empty? list-b) (zero? carry))
       empty
       (let*
@@ -17,6 +17,6 @@
           [sum (+ val-a val-b carry)] )
         (cons
           (remainder sum 10)
-          (loop rest-a rest-b (quotient sum 10)))))))
+          (loop (quotient sum 10) rest-a rest-b))))))
 
 (provide add-listnums)
