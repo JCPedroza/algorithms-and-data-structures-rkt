@@ -7,5 +7,5 @@
 
 (for ([two-sum solutions])
   (check-equal?
-    (two-sum (array #[11 3 9 15]) 12)
+    (two-sum 12 (array #[11 3 9 15]))
     (array #[1 2])))
